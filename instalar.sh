@@ -166,12 +166,12 @@ mv -f ${SCPinstal}/$1 ${ARQ}/$1
 chmod +x ${ARQ}/$1
 }
 
-# Instalação NEW-ULTIMATE
+# Instalaï¿½ï¿½o NEW-ULTIMATE
 fun_ip
-wget -O /usr/bin/trans https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-ULTIMATE-NEW-FREE/master/Install/trans &> /dev/null
+wget -O /usr/bin/trans https://raw.githubusercontent.com/flecha1/NEW-ADM-ULTIMATE/master/Install/trans &> /dev/null
 clear
 msg -bar2
-msg -ama "[ NEW - ULTIMATE - SCRIPT ]    \033[1;37m@AAAAAEXQOSyIpN2JZ0ehUQ"
+msg -ama "[ NEW - ULTIMATE - SCRIPT ]    \033[1;37m@FlechaVerde_inc"
 [[ $1 = "" ]] && funcao_idioma || {
 [[ ${#1} -gt 2 ]] && funcao_idioma || id="$1"
  }
@@ -218,8 +218,8 @@ if [[ -e $HOME/lista-arq ]] && [[ ! $(cat $HOME/lista-arq|grep "KEY INVALIDA!") 
    echo "${SCPdir}/menu" > /usr/bin/menu && chmod +x /usr/bin/menu
    echo "${SCPdir}/menu" > /usr/bin/adm && chmod +x /usr/bin/adm
    echo "${SCPdir}/menu" > /bin/h && chmod +x /bin/h
-   wget -O $HOME/versao https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-ULTIMATE-NEW-FREE/master/versao &> /dev/null
-   wget -O /bin/versao_script https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-ULTIMATE-NEW-FREE/master/Install/versaoatt &> /dev/null
+   wget -O $HOME/versao https://raw.githubusercontent.com/flecha1/NEW-ADM-ULTIMATE/master/versao &> /dev/null
+   wget -O /bin/versao_script https://raw.githubusercontent.com/flecha1/NEW-ADM-ULTIMATE/master/Install/versaoatt &> /dev/null
    inst_components
    install_hosts
    echo "$Key" > ${SCPdir}/key.txt
